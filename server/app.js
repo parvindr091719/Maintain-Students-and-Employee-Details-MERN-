@@ -8,7 +8,7 @@ const app = express()
 
 // db connections
 mongoose.Promise = global.Promise;
-//mongoose.connect('mongodb://localhost:27017/students')
+// mongoose.connect('mongodb://localhost:27017/students')
 mongoose.connect('mongodb://0.0.0.0:27017/students')
 mongoose.connection.on('connected',()=>{
     console.log('Database is connected');
